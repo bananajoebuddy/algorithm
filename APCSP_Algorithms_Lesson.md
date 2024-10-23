@@ -1,8 +1,9 @@
-
 # Introduction to Algorithms in JavaScript
+
 ## AP Computer Science Principles (AP CSP)
 
 ### Key Vocabulary
+
 - **Algorithm**: A step-by-step procedure to solve a problem
 - **Pseudocode**: Notational system for algorithms using plain language
 - **Efficiency**: A measure of time/space resources required by an algorithm
@@ -13,6 +14,7 @@
 ---
 
 ### What is an Algorithm?
+
 An algorithm is a set of clear, step-by-step instructions to perform a task or solve a problem.
 
 In computer science, algorithms can be expressed in pseudocode or a programming language like JavaScript.
@@ -20,6 +22,7 @@ In computer science, algorithms can be expressed in pseudocode or a programming 
 ---
 
 ### Why Are Algorithms Important?
+
 Algorithms allow computers to automate tasks, solve problems, and perform complex calculations efficiently.
 
 Understanding algorithms is critical to success in computer science.
@@ -27,6 +30,7 @@ Understanding algorithms is critical to success in computer science.
 ---
 
 ### Components of an Algorithm
+
 - **Sequencing**: The order in which instructions are executed
 - **Selection**: Decision-making based on conditions (e.g., if statements)
 - **Iteration**: Repeating instructions using loops (for, while)
@@ -36,6 +40,7 @@ Understanding algorithms is critical to success in computer science.
 ### Example 1: Max of Two Numbers
 
 **Pseudocode**:
+
 ```
 1. Input number1 and number2
 2. If number1 > number2:
@@ -45,6 +50,7 @@ Understanding algorithms is critical to success in computer science.
 ```
 
 **JavaScript**:
+
 ```javascript
 function findMax(num1, num2) {
   if (num1 > num2) {
@@ -60,6 +66,7 @@ function findMax(num1, num2) {
 ### Example 2: Even or Odd
 
 **Pseudocode**:
+
 ```
 1. Input number
 2. If number % 2 == 0:
@@ -69,6 +76,7 @@ function findMax(num1, num2) {
 ```
 
 **JavaScript**:
+
 ```javascript
 function checkEvenOdd(number) {
   if (number % 2 === 0) {
@@ -84,6 +92,7 @@ function checkEvenOdd(number) {
 ### Example 3: Sum of Numbers to n (Iteration)
 
 **Pseudocode**:
+
 ```
 1. Input n
 2. Set sum = 0
@@ -93,6 +102,7 @@ function checkEvenOdd(number) {
 ```
 
 **JavaScript**:
+
 ```javascript
 function sumToN(n) {
   let sum = 0;
@@ -106,6 +116,7 @@ function sumToN(n) {
 ---
 
 ### Efficiency and Complexity
+
 - **Time Complexity**: How long an algorithm takes to run relative to input size (e.g., O(n), O(log n))
 - **Space Complexity**: The amount of memory the algorithm uses
 
@@ -114,15 +125,15 @@ function sumToN(n) {
 ### Practice Problem: Factorial of n
 
 **Pseudocode**:
+
 ```
 
 ```
 
 **JavaScript**:
+
 ```javascript
 
 ```
 
 ---
-
-
