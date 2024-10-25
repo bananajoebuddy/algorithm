@@ -5,12 +5,19 @@
 function toDecimal(binary) {
   const value = [128, 64, 32, 16, 8, 4, 2, 1];
   let count = 0;
-  for (let i = 0; i <= 8; i++) {
-    if (binary[i] === "1") {
-      count += value[i];
+  if (binary.length === 8) {
+    for (let i = 0; i <= 8; i++) {
+      if (binary[i] === "1") {
+        count += value[i];
+      }
     }
+    return count;
   }
-  return count;
+  else {
+    for (let i = 0; binary.length )
+  }
 }
+console.log(toDecimal("1101"));
+console.log(toDecimal("11011111"));
 
-console.log(toDecimal("10101010"));
+fun;
