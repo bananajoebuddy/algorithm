@@ -14,7 +14,7 @@ function toDecimal(binary) {
     return count;
   }
   else {
-    for (let i = 0; binary.length )
+    for (let i = 0; binary.length)
   }
 }
 console.log(toDecimal("1101"));
