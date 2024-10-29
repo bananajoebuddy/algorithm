@@ -1,0 +1,35 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+:root {
+    --light-blue: rgb(151, 203, 255);
+    --dark-blue: rgb(20, 105, 190);
+    --light-red: rgb(239, 67, 67);
+    --primary: var(--light-red);
+
+    --h1: 1.883rem;
+    --h2: 2.649rem;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.warm{
+    --primary: var(--light-red);
+}
+
+.cool {
+    --primary: var(--light-blue)
+}
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);;
+}
