@@ -7,7 +7,7 @@ html, body, *{
     font-size: 10px;
 }
 
-:root {
+/* :root {
     --light-blue: rgb(151, 203, 255);
     --dark-blue: rgb(20, 105, 190);
     --light-red: rgb(239, 67, 67);
@@ -35,4 +35,4 @@ h1 {
 h2 {
     font-size: var(--h2);;
 }
-
+ */
