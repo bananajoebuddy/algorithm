@@ -171,5 +171,4 @@ const fakeids = [
     altText: "",
   },
 ];
-
 export { fakeids };
