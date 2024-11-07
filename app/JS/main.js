@@ -3,26 +3,24 @@ import { fakeids } from "./list.js";
 
 console.log(fakeids);
 
-let showcase = fakeids.filter(
-  (fakeids) => fakeids.spawnyear() === "Electronics"
-);
-const affordableElectronics = Electronics.filter(
-  (Electronics) => Electronics.price < 1000
-);
-affordableElectronics.forEach((affordableElectronics) =>
-  console.log("affordable eletronic:", affordableElectronics.name)
-);
+/* const over21Btn = DOMSelectors.over21Btn;
+over21Btn.addEventListener("click", functon (event)) {
+  document.getElementById
+} */
 
-let showcase = fakeids.filter((fakeids) => fakeids.category === "Electronics");
-const affordableElectronics = Electronics.filter(
-  (Electronics) => Electronics.price < 1000
-);
-affordableElectronics.forEach((affordableElectronics) =>
-  console.log("affordable eletronic:", affordableElectronics.name)
-);
+const DOMSelectors = {
+  over21btn: document.querySelector("#over21"),
+  malebtn: document.querySelector("#male"),
+  femalebtn: document.querySelector("#female"),
+  pricierbtn: document.querySelector("#pricier"),
+  cheaperbtn: document.querySelector("#cheaper"),
+  allbtn: document.querySelector("#all"),
+};
 
-DOMSelectors.button.addEventListener("click", function (event) {
+DOMSelectors.over21btn.addEventListener("click", function (event) {
   event.preventDefault();
+
+  //use filter of for each to find the values of the fake ids and see if it matches the requirements, aftewards, take the entire thing and insert it into html
 
   let name = DOMSelectors.name.value;
   let hobbies = DOMSelectors.hobbies.value;
