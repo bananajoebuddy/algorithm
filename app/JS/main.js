@@ -3,7 +3,7 @@ import { fakeids } from "./list.js";
 
 console.log(fakeids);
 
-let showcase = fakeids.filter(
+/* let showcase = fakeids.filter(
   (fakeids) => fakeids.spawnyear() === "Electronics"
 );
 const affordableElectronics = Electronics.filter(
@@ -19,7 +19,7 @@ const affordableElectronics = Electronics.filter(
 );
 affordableElectronics.forEach((affordableElectronics) =>
   console.log("affordable eletronic:", affordableElectronics.name)
-);
+); */
 
 DOMSelectors.button.addEventListener("click", function (event) {
   event.preventDefault();
@@ -40,5 +40,5 @@ DOMSelectors.button.addEventListener("click", function (event) {
                 <div> <button class="remove" type="remove">remove</button </div>
           </div>
       </div>`
-  );
+  ); 
 });
