@@ -2,31 +2,31 @@ import { fakeids } from "../JS/list.js";
 
 console.log(fakeids);
 
-/* const over21Btn = DOMSelectors.over21Btn;
-over21Btn.addEventListener("click", functon (event)) {
-  document.getElementById
-} */
 
 const DOMSelectors = {
-  over21btn: document.querySelector("#over21"),
-  malebtn: document.querySelector("#male"),
-  femalebtn: document.querySelector("#female"),
-  pricierbtn: document.querySelector("#pricier"),
-  cheaperbtn: document.querySelector("#cheaper"),
-  allbtn: document.querySelector("#all"),
+  over21btn: document.querySelector("#over21btn"),
+  malebtn: document.querySelector("#malebtn"),
+  femalebtn: document.querySelector("#femalebtn"),
+  pricierbtn: document.querySelector("#pricierbtn"),
+  cheaperbtn: document.querySelector("#cheaperbtn"),
+  allbtn: document.querySelector("#allbtn"),
   container: document.querySelector(".container"),
 };
 
 function createCards(fakeids) {
   DOMSelectors.container.innerHTML = "";
-  fakeids.forEach((fakeid) =>
+  fakeids.forEach((fakeids) =>
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
       `<div class="container">
             <div class="card">
-                  <img src=${fakeids.imageUrl} alt=${fakeids.altText} class="card-img">
                   <h2 class="card-header">${fakeids.name}</h2>
-                  <h4 class="card-desc">spawnyear: ${fakeids.spawnyear}, expiration: ${fakeids.expiration}, sex: ${fakeids.sex}, description: ${fakeids.description}, price: ${fakeids.price}</h4>
+                  <h4 class="card-desc">Spawnyear: ${fakeids.spawnyear} 
+                Expiration: ${fakeids.expiration} 
+                Sex: ${fakeids.sex} 
+                Description: ${fakeids.description} 
+                Price: ${fakeids.price}</h4>
+                  <img src=${fakeids.imageUrl} alt=${fakeids.altText} class="card-img">
             </div>
         </div>`
     )
@@ -36,19 +36,36 @@ createCards(fakeids);
 
 DOMSelectors.over21btn.addEventListener("click", function (event) {
   event.preventDefault();
-
-  //use filter of for each to find the values of the fake ids and see if it matches the requirements, aftewards, take the entire thing and insert it into html
-  /* fakeids.filter((fakeids) => fakeids.spawnyear(num_str[-4] <= 2003));
-  fakeids.filter(
-    (fakeids) => parseInt(fakeids.spawnyear.slice(-4), 10) <= 2003 */
-  //);
+  const over21Ids = fakeids.filter((fakeid) => parseInt(fakeid.spawnyear.slice(-4), 10) <= 2003);
+  createCards(over21Ids);
 });
-//const highlyratedProducts = products.filter((product) => product.rating >= 4.5);
 
-//const highlyratedProducts = products.filter((product) => product.rating >= 4.5);
-//console.log("Highly rate products", highlyratedProducts);
+DOMSelectors.malebtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const maleIds = fakeids.filter((fakeid) => fakeid.sex === "M");
+  createCards(maleIds);
+});
 
-/* highlyratedProducts.forEach((highlyratedProducts) =>
-  console.log("highly rated product:", highlyratedProducts.name)
-);
- */
+
+DOMSelectors.femalebtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const femaleIds = fakeids.filter((fakeid) => fakeid.sex === "F");
+  createCards(femaleIds);
+});
+
+DOMSelectors.pricierbtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const pricierIds = fakeids.filter((fakeid) => parseFloat(fakeid.price) > 10);
+  createCards(pricierIds);
+});
+
+DOMSelectors.cheaperbtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const cheaperIds = fakeids.filter((fakeid) => parseFloat(fakeid.price) <= 10);
+  createCards(cheaperIds);
+});
+
+DOMSelectors.allbtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  createCards(fakeids); 
+});
