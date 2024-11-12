@@ -85,66 +85,95 @@ h2 {
     text-align: center;
 } */
 
+
+
 * {
     box-sizing: border-box;
+ }
+ 
+ :root {
+    --light-background: rgb(230, 220, 206); /* Light background color */
+    --dark-background: rgb(29, 34, 65); /* Dark background color */
+    --light-primary: #b69663; /* Light mode primary color (red) */
+    --light-primary-second: #c1b093;
+    --dark-primary: rgb(18, 21, 37); /* Dark mode primary color (blue) */
+    --light-text: #a5906f; /* Light mode text color */
+    --light-text-second: #ffffff;
+    --dark-text: rgb(0, 0, 0); /* Dark mode text color */
 }
-
-body {
-    background-color: rgb(255, 240, 220);
+ 
+ body {
+    background-color: var(--light-background);
     margin: 0;
     padding: 0 15px;
+ }
+ 
+
+ .container-buttons {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Distribute buttons evenly across the screen */
+    align-items: center; /* Vertically center buttons */
+    width: 100%; /* Full width of the parent container */
+    padding: 1rem 5%; /* Optional: padding for spacing around buttons */
+    margin-bottom: 2rem; /* Space between the button row and cards */
 }
 
-.container {
+ button {
+    margin: 0.5rem; /* Space between buttons */
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 1rem;
+    background-color: var(--light-primary); /* Button color */
+    color: var(--light-text-second);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*flex-grow: 1;  Makes buttons grow to fill available space*/
+    text-align: center; 
+}
+
+ 
+ .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
-}
-
-.card {
-    width: 100%;
-    max-width: 350px; /* Adjust the card width */
-    display: flex;
-    flex-direction: row; /* Ensure the layout is horizontal (image left, text right) */
-    margin: 2rem;
-    background-color: blanchedalmond;
-    border: 15px solid wheat;
-    border-radius: 10px; /* Rounded corners for the card */
+ }
+ 
+ 
+ .card {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    border: 15px solid var(--light-primary-second);
+    border-radius: 3px;
     border-style: double;
-    box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
-    overflow: hidden;
-}
-
-.card-img {
-    width: 40%; /* Image takes up 40% of the card width */
-    height: 100%;
-    object-fit: cover; /* Ensures the image doesn't stretch */
-    border-radius: 10px 0 0 10px; /* Rounded left corners for the image */
-}
-
-.card-content {
-    width: 60%; /* Text content takes up the remaining 60% */
-    padding: 1rem;
     display: flex;
+    margin: 2rem;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden; /* Prevent content overflow */
-}
-
-.card-header {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    overflow: hidden; /* Hide overflow in case the name is too long */
-    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
-    white-space: nowrap; /* Prevent wrapping */
-}
-
-.card-desc {
-    font-size: 1.4rem;
-    text-align: left;
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis for overflow text */
-    white-space: normal; /* Allow the description to wrap normally */
-}
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-background);
+    box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
+ }
+ 
+ 
+ .card-img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container, cropping if necessary */
+    transition: all 0.3s;
+ }
+ 
+ 
+ .card-header {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--light-text);
+ }
+ 
+ 
+ .card-desc {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--light-text);
+ }
