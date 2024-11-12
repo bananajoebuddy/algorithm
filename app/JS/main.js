@@ -1,5 +1,4 @@
-import "../CSS/style.css";
-import { fakeids } from "./list.js";
+import { fakeids } from "../JS/list.js";
 
 console.log(fakeids);
 
@@ -20,20 +19,19 @@ const DOMSelectors = {
 
 function createCards(fakeids) {
   DOMSelectors.container.innerHTML = "";
-  fakeids.forEach((fakeids) =>
+  fakeids.forEach((fakeid) =>
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
       `<div class="container">
             <div class="card">
                   <img src=${fakeids.imageUrl} alt=${fakeids.altText} class="card-img">
                   <h2 class="card-header">${fakeids.name}</h2>
-                  <h4 class="card-desc">spawnyear: ${fakeids.spawnyear}, expiration: ${fakeids.expiration}, sex: ${fakeids.sex}, description: ${fakeids.description}, price: ${fakeids.price}</h3>
+                  <h4 class="card-desc">spawnyear: ${fakeids.spawnyear}, expiration: ${fakeids.expiration}, sex: ${fakeids.sex}, description: ${fakeids.description}, price: ${fakeids.price}</h4>
             </div>
         </div>`
     )
   );
 }
-console.log(fakeids);
 createCards(fakeids);
 
 DOMSelectors.over21btn.addEventListener("click", function (event) {
