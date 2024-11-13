@@ -93,37 +93,59 @@ h2 {
  
  :root {
     --light-background: rgb(230, 220, 206); /* Light background color */
-    --dark-background: rgb(29, 34, 65); /* Dark background color */
+    --dark-background: rgb(55, 60, 99); /* Dark background color */
     --light-primary: #785d33; /* Light mode primary color (red) */
     --light-primary-second: #c1b093;
-    --dark-primary: rgb(18, 21, 37); /* Dark mode primary color (blue) */
+    --dark-primary: rgb(8, 11, 27); /* Dark mode primary color (blue) */
+    --dark-primary-second: rgb(26, 31, 58);
     --light-text: #624f2c; /* Light mode text color */
     --light-text-second: #ffffff;
-    --dark-text: rgb(0, 0, 0); /* Dark mode text color */
+    --dark-text: rgb(17, 9, 3); /* Dark mode text color */
+    --dark-text-second: #ffffff;
+    --light-drop: rgb(92, 88, 98);
+    --dark-drop: #170f03;
+}
+
+body.dark{
+    --background: var(--dark-background);
+    --primary: var(--dark-primary);
+    --primary-second: var(--dark-primary-second);
+    --text: var(--dark-text);
+    --text-second: var(--dark-text-second);
+    --drop: var(--dark-drop);
+}
+
+body.light{
+    --background: var(--light-background);
+    --primary: var(--light-primary);
+    --primary-second: var(--light-primary-second);
+    --text: var(--light-text);
+    --text-second: var(--light-text-second);
+    --drop: var(--light-drop);
 }
  
  body {
-    background-color: var(--light-background);
+    background-color: var(--background);
     margin: 0;
     padding: 0 15px;
  }
  
 
  .container-buttons {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Distribute buttons evenly across the screen */
-    align-items: center; /* Vertically center buttons */
-    width: 100%; /* Full width of the parent container */
-    padding: 1rem 5%; /* Optional: padding for spacing around buttons */
-    margin-bottom: 2rem; /* Space between the button row and cards */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 1rem 5%; 
+    margin-bottom: 1.0rem; 
 }
 
  button {
-    margin: 0.5rem; /* Space between buttons */
-    padding: 10px 20px; /* Padding inside buttons */
+    margin: 0.5rem; 
+    padding: 10px 20px; 
     font-size: 1rem;
-    background-color: var(--light-primary); /* Button color */
-    color: var(--light-text-second);
+    background-color: var(--primary); 
+    color: var(--text-second);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -139,12 +161,17 @@ h2 {
     padding: 1rem;
  }
  
- 
+ h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+    color: var(--text);
+ }
  .card {
     width: 60%;
     max-width: 400px;
     height: auto;
-    border: 15px solid var(--light-primary-second);
+    border: 15px solid var(--primary-second);
     border-radius: 3px;
     border-style: double;
     display: flex;
@@ -152,8 +179,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--light-background);
-    box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
+    background-color: var(--background);
+    box-shadow: 1rem 1rem 1rem -1rem var(--drop);
  }
  
  
@@ -166,14 +193,14 @@ h2 {
  
  
  .card-header {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
-    color: var(--light-text);
+    color: var(--text);
  }
  
  
  .card-desc {
     font-size: 1rem;
     text-align: center;
-    color: var(--light-text);
+    color: var(--text);
  }

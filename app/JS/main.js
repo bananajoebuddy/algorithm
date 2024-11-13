@@ -70,39 +70,13 @@ DOMSelectors.allbtn.addEventListener("click", function (event) {
   createCards(fakeids); 
 });
 
-// Define the color schemes for light and dark modes
-const lightModeColors = {
-  '--background': 'rgb(230, 220, 206)',
-  '--primary': 'rgb(239, 67, 67)',
-  '--text-color': 'rgb(30, 30, 30)',
-  '--button-bg': '#b69663',
-  '--button-hover-bg': '#a2814e',
-};
 
-const darkModeColors = {
-  '--background': 'rgb(35, 35, 35)',
-  '--primary': 'rgb(70, 130, 180)',
-  '--text-color': 'rgb(255, 255, 255)',
-  '--button-bg': '#4CAF50',
-  '--button-hover-bg': '#45a049',
-};
-
-// Function to apply a theme by updating CSS variables
-function applyTheme(themeColors) {
-  for (let key in themeColors) {
-      document.documentElement.style.setProperty(key, themeColors[key]);
+theme.addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else if (document.body.classList.contains("dark")) {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
   }
-}
-
-// Get the buttons
-const lightModeButton = document.getElementById('light-mode-btn');
-const darkModeButton = document.getElementById('dark-mode-btn');
-
-// Add event listeners to the buttons to switch between light and dark modes
-lightModeButton.addEventListener('click', () => {
-  applyTheme(lightModeColors); // Apply light mode
-});
-
-darkModeButton.addEventListener('click', () => {
-  applyTheme(darkModeColors); // Apply dark mode
 });

@@ -17,7 +17,7 @@ const fakeids = [
     sex: "M",
     description: "Looks like a frat guy, think he got in some trouble with cops once for drunk driving",
     price: "5.18",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hullfc.com%2Fteam%2Ffirst-team%2Fjordan-lane&psig=AOvVaw2FU7x4DqrthywnAmEyMg1Y&ust=1731470768777000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiW5Lb11YkDFQAAAAAdAAAAABAK",
+    imageUrl: "public/image1.png",
     altText: "dang not what I was expecting",
   },
   {
@@ -27,7 +27,7 @@ const fakeids = [
     sex: "F",
     description: "Middle aged white women, HOA president so it might come in handy",
     price: "27.01",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Femilyjoyarcher&psig=AOvVaw0A5EVmI5KjdrKlSOuKmUeQ&ust=1731470846569000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDY9df11YkDFQAAAAAdAAAAABAO",
+    imageUrl: "public/image2.png",
     altText: "perfect",
   },
   {
@@ -37,7 +37,7 @@ const fakeids = [
     sex: "M",
     description: "Looks homeless",
     price: "0.94",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmitchellsco.com%2Fricardo-sylvester%2F&psig=AOvVaw1cbBFDmH1XEn6JMVRcUJWz&ust=1731470897267000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCqzvf11YkDFQAAAAAdAAAAABAE",
+    imageUrl: "public/image3.png",
     altText: "what he staring at me for",
   },
   {
@@ -47,7 +47,7 @@ const fakeids = [
     sex: "F",
     description: "08, boba, #nyc.. you get my point",
     price: "8.82",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Flilyjnguyen25&psig=AOvVaw2C3YjJV98-xFz6wwaZAkvf&ust=1731470938164000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMijsYv21YkDFQAAAAAdAAAAABAK",
+    imageUrl: "public/image4.png",
     altText: "professhyyyy",
   },
   {
@@ -57,7 +57,7 @@ const fakeids = [
     sex: "M",
     description: "Guy I chatted with at a bar.. dont ask what happened to him",
     price: "17.35",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnewyorkcomedyclub.com%2Fcomedians%2Fcarlos-garcia&psig=AOvVaw0YxoBaPB3HmGJahDhZs-PQ&ust=1731471014199000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjPu6n21YkDFQAAAAAdAAAAABAE",
+    imageUrl: "public/image5.png",
     altText: "that damm smirk...",
   },
   {
@@ -67,7 +67,7 @@ const fakeids = [
     sex: "F",
     description: "Black haired with really pretty hazel eyes, hopefully your pretty enough to match up- hehehhehehhe",
     price: "51.98",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fsymplesims%2Fstatus%2F1509989784634146818&psig=AOvVaw03iZnyepkWxkK9EaNQlNJX&ust=1731471043158000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCn7Lj21YkDFQAAAAAdAAAAABAJ",
+    imageUrl: "public/image6.png",
     altText: "guess you identify as a sim now lolol",
   },
   {
@@ -77,7 +77,7 @@ const fakeids = [
     sex: "M",
     description: "Brown messy hair and disheveled look, tried making a podcast lolz and it failed, miserably",
     price: "9.21",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmsuspartans.com%2Fsports%2Ffootball%2Froster%2Fben--roberts%2F15534&psig=AOvVaw2oRHU62UtZJ4vUcsCWVTDe&ust=1731471084618000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj-1Mz21YkDFQAAAAAdAAAAABAE",
+    imageUrl: "public/image7.png",
     altText: "those shoulder pads arent helping your case buddy",
   },
   {
@@ -87,7 +87,7 @@ const fakeids = [
     sex: "F",
     description: "Blonde hair with pink tips",
     price: "4.76",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fmayakim02%2F&psig=AOvVaw1S7dtjHoo4V8YaL7l3ekqv&ust=1731471126222000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKig9uD21YkDFQAAAAAdAAAAABAQ",
+    imageUrl: "public/image8.png",
     altText: "ZOOWEE MAMA",
   },
   {
@@ -97,7 +97,7 @@ const fakeids = [
     sex: "M",
     description: "Another homeless looking one, lol",
     price: "2.09",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.acponline.org%2Fabout-acp%2Fchapters-regions%2Funited-states%2Fhawaii-chapter%2Fabout-the-chapter%2Fchapter-governor-samuel-j-evans-md-ms-facp&psig=AOvVaw3uYhl8dlm_wEjBZF3o6-e0&ust=1731471176316000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOi4lPf21YkDFQAAAAAdAAAAABAO",
+    imageUrl: "public/image9.png",
     altText: "cool he a doc",
   },
   {
@@ -107,7 +107,7 @@ const fakeids = [
     sex: "F",
     description: "Grayish red hair, kind of a hippie",
     price: "8.32",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfwQKyejM2yN7lkYlUZNquD3m89LhanT_8g&s",
+    imageUrl: "public/image10.png",
     altText: "nice hat",
   },
   {
@@ -117,7 +117,7 @@ const fakeids = [
     sex: "M",
     description: "his eyes kind of apart, like your split ends",
     price: "14.19",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DQ9k2qvN9NZY&psig=AOvVaw2BntUTxwOidDSX_jqQQYLg&ust=1731471353252000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjo68n31YkDFQAAAAAdAAAAABAE",
+    imageUrl: "public/image11.png",
     altText: "he cookin",
   },
   {
@@ -127,7 +127,7 @@ const fakeids = [
     sex: "F",
     description: "She very short, haha",
     price: "2.08",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsofia-ramirez1&psig=AOvVaw0ffsnfPvkk3bpF1u1iPFqV&ust=1731471426060000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKC_he331YkDFQAAAAAdAAAAABAJ",
+    imageUrl: "public/image12.png",
     altText: "why are all the girls so pretty",
   },
   {
@@ -137,7 +137,7 @@ const fakeids = [
     sex: "M",
     description: "copped his id cause he playin valorant, ew",
     price: "1.59",
-    imageUrl: "https://media.licdn.com/dms/image/v2/C4D03AQFcHNZZrTG-vg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1632847450941?e=2147483647&v=beta&t=vCg-aDWOS6u6wR1z2dnjQfQzoDlSs0QCn1g5iNSOzhU",
+    imageUrl: "public/image13.png",
     altText: "WHATS THAT HAIRCUT EW",
   },
   {
@@ -147,7 +147,7 @@ const fakeids = [
     sex: "F",
     description: "Black hair with glasses, you could probably pull it off",
     price: "4.52",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Famandaaart%2Fp%2FCa5_rsMv6wK%2F&psig=AOvVaw3PvP1RHiMKiWGJ1pZ_YYPL&ust=1731471659423000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOC-x9v41YkDFQAAAAAdAAAAABAJ",
+    imageUrl: "public/image14.png",
     altText: "is she okay",
   },
   {
@@ -157,7 +157,7 @@ const fakeids = [
     sex: "F",
     description: "Bleach blonde hair with pink sweater",
     price: "1.09",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fivystudentcouncil%2Fp%2FCNnqzb8D8zj%2F&psig=AOvVaw37FRyCoFo-vjNDl8ilyrjx&ust=1731471691487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDsyu_41YkDFQAAAAAdAAAAABAE",
+    imageUrl: "public/image15.png",
     altText: "oh cool smae sweater",
   },
   {
@@ -167,7 +167,7 @@ const fakeids = [
     sex: "M",
     description: "hohoho merry christmas",
     price: "413126.01",
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsoundcloud.com%2Fmichael-whalen-997591802&psig=AOvVaw249SGyWoCr3mytyobTpjPP&ust=1731471752632000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD57Yj51YkDFQAAAAAdAAAAABAE",
+    imageUrl: "public/image16.png",
     altText: "we KNOW THIS DIVA, wait thats not him",
   },
 ];
