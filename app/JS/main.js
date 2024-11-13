@@ -21,11 +21,11 @@ function createCards(fakeids) {
       `<div class="container">
             <div class="card">
                   <h2 class="card-header">${fakeids.name}</h2>
-                  <h4 class="card-desc">Spawnyear: ${fakeids.spawnyear} 
+                  <h3 class="card-desc">Spawnyear: ${fakeids.spawnyear} 
                 Expiration: ${fakeids.expiration} 
                 Sex: ${fakeids.sex} 
                 Description: ${fakeids.description}, 
-                Price: ${fakeids.price}</h4>
+                Price: ${fakeids.price}</h3>
                   <img src=${fakeids.imageUrl} alt=${fakeids.altText} class="card-img">
             </div>
         </div>`

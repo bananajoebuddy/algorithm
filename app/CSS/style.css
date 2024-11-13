@@ -94,10 +94,10 @@ h2 {
  :root {
     --light-background: rgb(230, 220, 206); /* Light background color */
     --dark-background: rgb(29, 34, 65); /* Dark background color */
-    --light-primary: #b69663; /* Light mode primary color (red) */
+    --light-primary: #785d33; /* Light mode primary color (red) */
     --light-primary-second: #c1b093;
     --dark-primary: rgb(18, 21, 37); /* Dark mode primary color (blue) */
-    --light-text: #a5906f; /* Light mode text color */
+    --light-text: #624f2c; /* Light mode text color */
     --light-text-second: #ffffff;
     --dark-text: rgb(0, 0, 0); /* Dark mode text color */
 }
